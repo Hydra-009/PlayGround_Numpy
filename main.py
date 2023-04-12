@@ -13,3 +13,8 @@ z1 = x.max(axis=1) #axis=1は行に沿った処理指定（行の中で最大値
 z2 = y.max(axis=0) #axis=0は列に沿った処理指定（列の中で最大値探索）
 print(z1)
 print(z2)
+
+rng = np.random.default_rng() #多分乱数生成オブジェクトを作ってる
+print(rng)                    #だから返り値がGenerator
+samples = rng.normal(size=5)  #.nomal=正規分布からのランダムサンプルの抽出 #size=指定した数だけサンプルを抽出
+print(samples)
