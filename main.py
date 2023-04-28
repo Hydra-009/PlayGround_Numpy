@@ -18,3 +18,7 @@ rng = np.random.default_rng() #多分乱数生成オブジェクトを作って�
 print(rng)                    #だから返り値がGenerator
 samples = rng.normal(size=5)  #.nomal=正規分布からのランダムサンプルの抽出 #size=指定した数だけサンプルを抽出
 print(samples)
+
+e_input = np.zeros(15)
+print(e_input)
+print(e_input.reshape(3,5))
